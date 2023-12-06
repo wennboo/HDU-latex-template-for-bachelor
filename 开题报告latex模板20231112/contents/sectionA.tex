@@ -1,0 +1,71 @@
+% !Mode:: "TeX:UTF-8"
+
+
+\begin{itemize}
+  \item 军事
+  \item 政治
+  \item 历史
+\end{itemize}
+
+
+%% enumerate看效果\Alph*，\alph*，\Roman*，\roman*，\arabic*
+多智能体系统的分类：
+\begin{enumerate}[label=\alph*)]   
+  \item 同构多智能体系统
+  \item 异构多智能体系统
+\end{enumerate}
+
+
+定理插入可参考如下
+\begin{theorem}
+设$f$在凸集$D \subset {R^n}$上一阶连续可微，则
+\begin{itemize}
+\item $f$在$D$上为凸函数的充要条件是
+\begin{equation*}
+f(x) \ge f({x^*}) + \nabla f{({x^*})^T}(x - {x^*}),\forall {x^*},x \in D.
+\end{equation*}
+\item  $f$在$D$上严格凸的充要条件是$x \ne y$时，
+\begin{equation*}
+f(x) > f({x^*}) + \nabla f{({x^*})^T}(x - {x^*}),\forall {x^*},x \in D.
+\end{equation*}
+\item $f$在$D$上一致凸的充要条件是，存在常数$c > 0$，使得
+成立
+\begin{equation*}
+f(x) > f({x^*}) + \nabla f{({x^*})^T}(x - {x^*}) + c{\left\| {x - {x^*}} \right\|^2},\forall {x^*},x \in D.
+\end{equation*}
+\end{itemize}
+\end{theorem}
+
+
+\begin{definition}
+设集合 $D \subset {R^n}.$ 称集合$D$为凸集, 是指对任意的 $x,y \in {R^n}$及任意
+的实数$\lambda  \in [0,1],$ 都有$\lambda x + (1 - \lambda )y \in D.$
+\end{definition}
+
+
+\begin{assumption}
+设$f$在凸集$D \subset {R^n}$上一阶连续可微。
+\end{assumption}
+
+
+\begin{problem}
+  设$f$在凸集$D \subset {R^n}$上一阶连续可微。
+  \end{problem}
+ 
+
+
+\begin{algorithm}[H]
+    \KwIn {西瓜集}
+    \KwOut{分类结果}
+    初始化\;
+    \While{迭代未终止}{
+        学习\;
+        \eIf{西瓜属性}{
+            统计\;
+            计算\;
+        }{
+            下一次迭代\;
+        }
+    }
+    \caption{西瓜集分类算法}
+\end{algorithm}

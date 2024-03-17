@@ -212,8 +212,20 @@
   {\thesubsubsection}{6pt}{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%公式、图表、定理等编号等设置%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{theorem}{定理}[chapter]
+\newtheorem{axiom}{公理}[chapter]
+\newtheorem{corollary}{推论}[chapter]
+\newtheorem{lemma}{引理}[chapter]
+\newtheorem{definition}{定义}[chapter]
+\newtheorem{example}{举例}[chapter]
+\newtheorem{proposition}{命题}[chapter]
+\newtheorem{problem}{问题}[chapter]
+\newtheorem{assumption}{假设}[chapter]
+\newtheorem{remark}{注}[chapter]
 
-%%%%公式、图表编号等设置%%%
+
 \renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}
 \renewcommand{\thetable}{\arabic{chapter}-\arabic{table}}
 \renewcommand{\thefigure}{\arabic{chapter}-\arabic{figure}}
@@ -226,8 +238,10 @@
 \renewcommand{\theproposition}{\arabic{chapter}.\arabic{proposition}}
 \renewcommand{\theproblem}{\arabic{chapter}.\arabic{problem}}
 \renewcommand{\theassumption}{\arabic{chapter}.\arabic{assumption}}
+\renewcommand{\theremark}{\arabic{chapter}.\arabic{remark}}
 \renewcommand\thealgocf{\arabic{chapter}-\arabic{algocf}}
 \renewcommand{\proofname}{\bfseries 证明}
+
 
 %%%%%%%%%%%%章节型中文名字设置%%%%%%%%%%%%%%
 \renewcommand{\contentsname}{目\one@space 录}
